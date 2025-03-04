@@ -186,3 +186,11 @@ document.getElementById("clearbtn").addEventListener("click", function () {
   document.getElementById("task-history").innerText = "";
 });
 // window.location.href = "New folder/blog.html";
+
+// random color theme-btn
+document.getElementById("theme-btn").addEventListener("click", () => {
+  const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+  // বডির ব্যাকগ্রাউন্ড রঙ সেট করা
+  document.body.style.backgroundColor = randomColor;
+});
